@@ -4,5 +4,8 @@ $(function(){
     $.get(`/products/${prodId}/description`, function(data){
       let description = data;
     })
+    $.get(`/products/${prodId}/description`, function(data){
+      let description = data;
+    })
   })
 })
