@@ -1,6 +1,6 @@
 $(function(){
   $(".js-product-more").on('click', function(){
-    let prodId = $(this).data("id");
+    var prodId = $(this).data("id");
 
     // get product description
     $.get(`/products/${prodId}/description`, function(data){
