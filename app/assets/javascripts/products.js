@@ -1,8 +1,7 @@
 $(function(){
   $(".js-product-more").on('click', function(){
-    debugger;
-    let prod-id = $(this).data("id");
-    $().get("/products/:id/description", function(data){
+    let prodId = $(this).data("id");
+    $().get(`/products/${prodId}/description`, function(data){
       debugger;
     })
   })
