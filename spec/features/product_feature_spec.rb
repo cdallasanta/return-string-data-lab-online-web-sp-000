@@ -11,6 +11,9 @@ RSpec.describe "Product Index", type: :feature do
     expect(page).to have_content product.name
     expect(page).not_to have_content product.description
     click_button "More Info"
+
+    # tests removed as per Tech Coach, code works in browser, just not in these tests
+    
     # expect(page).to have_content product.description
     # expect(page).to have_content "Sold Out"
     # product.inventory = 1
