@@ -1,10 +1,10 @@
 $(function(){
   $(".js-product-more").on('click', function(){
+    debugger;
     let prodId = $(this).data("id");
 
     // get product description
     $.get(`/products/${prodId}/description`, function(data){
-      debugger;
       $(`#product-${prodId}-description`).text(data);
     })
 
