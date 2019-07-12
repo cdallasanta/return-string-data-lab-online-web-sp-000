@@ -1,6 +1,5 @@
 $(function(){
   $(".js-product-more").on('click', function(){
-    debugger;
     let prodId = $(this).data("id");
 
     // get product description
