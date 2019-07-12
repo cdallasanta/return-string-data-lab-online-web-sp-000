@@ -4,10 +4,10 @@ $(function(){
     $.get(`/products/${prodId}/inventory`, function(data){
       if (data === "true") {
         $.get(`/products/${prodId}/description`, function(data){
-          // let description = data;
+          $(`#product-${prodId}-description`).text = data;
         })
       } else {
-        
+        $(`#product-${prodId}-description`).text = "Sold out";
       }
     })
   })
