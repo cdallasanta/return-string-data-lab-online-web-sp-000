@@ -1,3 +1,3 @@
-$(".js-products-more").on('click', function(){
-  
+$(".js-product-more").on('click', function(){
+
 })
