@@ -1,3 +1,3 @@
 $(".js-product-more").on('click', function(){
-  $().get()
+  $().get("/products/:id/description")
 })
