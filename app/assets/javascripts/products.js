@@ -1,6 +1,8 @@
-$(".js-product-more").on('click', function(){
-  debugger;
-  $().get("/products/:id/description", function(data){
+$(function(){
+  $(".js-product-more").on('click', function(){
     debugger;
+    $().get("/products/:id/description", function(data){
+      debugger;
+    })
   })
 })
