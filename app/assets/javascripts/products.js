@@ -5,10 +5,10 @@ $(function(){
       debugger;
       if (data === "true") {
         $.get(`/products/${prodId}/description`, function(data){
-          $(`#product-${prodId}-description`).text = data;
+          $(`#product-${prodId}-description`).text(data);
         })
       } else {
-        $(`#product-${prodId}-description`).text = "Sold out";
+        $(`#product-${prodId}-description`).text("Sold out");
       }
     })
   })
