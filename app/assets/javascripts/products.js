@@ -4,7 +4,7 @@ $(function(){
 
     // get product description
     $.get(`/products/${prodId}/description`, function(data){
-      $(`#product-${prodId}-description`).text(data);
+      $(`#product-${prodId}-description`).innerHTML = data;
     })
 
     // If it's sold out, say so
