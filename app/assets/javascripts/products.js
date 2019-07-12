@@ -2,6 +2,7 @@ $(function(){
   $(".js-product-more").on('click', function(){
     let prodId = $(this).data("id");
     $.get(`/products/${prodId}/inventory`, function(data){
+      debugger;
       if (data === "true") {
         $.get(`/products/${prodId}/description`, function(data){
           $(`#product-${prodId}-description`).text = data;
