@@ -17,6 +17,7 @@ class ProductsController < ApplicationController
   end
 
   def description
+    binding.pry
     #get product's description as plain text
     product = Product.find(params[:id])
     render plain: product.description
