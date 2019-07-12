@@ -10,7 +10,9 @@ $(function(){
     // If it's sold out, say so
     $.get(`/products/${prodId}/inventory`, function(data){
       if (data === "false") {
-        $(`#product-${prodId}-description`).append("Sold out");
+        $(`#product-${prodId}-description`).append(" - Sold out");
+      } else {
+        $(`#product-${prodId}-description`).append(" - Available");
       }
     })
   })
